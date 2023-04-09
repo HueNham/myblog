@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/abe038d871.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 
@@ -44,129 +45,131 @@
 
 
             <div class="search-container">
-                <form>
-                    <input type="text" id="searchInput" placeholder="Search content.." name="search">
-                    <button type="button" id="searchBtn"><i class="fa fa-search"></i></button>
-                </form>
+                    <input type="text" class="searchInput" placeholder="Search content..">
+                    <button type="button" class="searchBtn"><i class="fa fa-search"></i></button>
             </div>
         </ul>
        
     </div>
+<!--body-->
+        <section id="about">
+            <h3>About Me</h3>
+            <img src="./img/296844823_3254405908150141_1785517374983556594_n.jpeg" alt="My Picture">
+            <p>My name is Summer and I am a language learner. I started learning languages when I was in college and have been passionate about it ever since. 
+                I love exploring different cultures and meeting new people from around the world. In my free time, I enjoy reading, watching movies, and traveling.</p>
+          </section>
+          <hr>
+          
+        <!--Learning content-->
+        <section id="learning">
+            <h2>Learning</h2>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h4><a href="#korean">Korean</a></h4>
+                    <p>Here is some studying Korean pages that may be good for you</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h4><a href="#chinese">Chinese</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h4><a href="#english">English</a></h4>        
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <hr>
+          
+        <!--Reading content-->
+        <section id="reading">
+            <h3>Reading</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4><a href="#news">News</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                  <h4><a href="#book">Book</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                  <h4><a href="#comic">Comic</a></h4>        
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+              </div>
+            </div>
+        </section>
+          <!-- Contact Section -->
+
+        <section id="contact">
+            <h4>CONTACT TO ME</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                      <img src="./img/Image.ashx.jpeg" class="img-responsive img-rounded" alt="Map">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <i class="fa fa-map-marker fa-fw fa-2x"></i>
+                        </div>
+                        <div class="col-md-11">
+                          <p class="m-0">Samsung SDS, Hanoi, VN</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1">
+                          <i class="fa fa-phone fa-fw fa-2x"></i>
+                        </div>
+                        <div class="col-md-11">
+                          <p class="m-0">Phone: +84-947-4954-96</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1">
+                          <i class="fa fa-envelope fa-fw fa-2x"></i>
+                        </div>
+                        <div class="col-md-11">
+                          <p class="m-0">Email: nt.hue5@samsung.com</p>
+                        </div>
+                      </div>
+                      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                      <form action="/action_page.php" method="post" target="_blank">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input class="form-control" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="col-md-6">
+                              <input class="form-control" type="text" placeholder="Email" required name="Email">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input class="form-control" type="text" placeholder="Message" required name="Message">
+                            </div>
+                          </div>
+                          <button class="btn btn-primary pull-right" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                          </button>
+                        </form>
+                    </div>
+                  </div>
+            </div>
+    
+    </div>
 
     <!--About me-->
 
-    <section id="about">
-        <h3>About Me</h3>
-        <img src="./img/296844823_3254405908150141_1785517374983556594_n.jpeg" alt="My Picture">
-        <p>My name is Summer and I am a language learner. I started learning languages when I was in college and have been passionate about it ever since. 
-            I love exploring different cultures and meeting new people from around the world. In my free time, I enjoy reading, watching movies, and traveling.</p>
-      </section>
-      <hr>
-      
-    <!--Learning content-->
-    <section id="learning">
-        <h2>Learning</h2>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <h4><a href="#korean">Korean</a><button></button></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-4">
-                <h4><a href="#chinese">Chinese</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-4">
-                <h4><a href="#english">English</a></h4>        
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-            </div>
-          </div>
-    </section>
-    <hr>
-      
-    <!--Reading content-->
-    <section id="reading">
-        <h3>Reading</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h4><a href="#news">News</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-              <h4><a href="#book">Book</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-              <h4><a href="#comic">Comic</a></h4>        
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-          </div>
-        </div>
-    </section>
-      <!-- Contact Section -->
-      <div class="container" id="contact">
-        <h4 class="text-center">CONTACT TO ME</h4>
-      
-        <div class="row">
-          <div class="col-md-4">
-            <img src="./img/Image.ashx.jpeg" class="img-responsive img-rounded" alt="Map">
-          </div>
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa fa-map-marker fa-fw fa-2x"></i>
-              </div>
-              <div class="col-md-11">
-                <p class="m-0">Samsung SDS, Hanoi, VN</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa fa-phone fa-fw fa-2x"></i>
-              </div>
-              <div class="col-md-11">
-                <p class="m-0">Phone: +84-947-4954-96</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <i class="fa fa-envelope fa-fw fa-2x"></i>
-              </div>
-              <div class="col-md-11">
-                <p class="m-0">Email: nt.hue5@samsung.com</p>
-              </div>
-            </div>
-            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-            <form action="/action_page.php" method="post" target="_blank">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input class="form-control" type="text" placeholder="Name" required name="Name">
-                  </div>
-                  <div class="col-md-6">
-                    <input class="form-control" type="text" placeholder="Email" required name="Email">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <input class="form-control" type="text" placeholder="Message" required name="Message">
-                  </div>
-                </div>
-                <button class="btn btn-primary pull-right" type="submit">
-                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-              </form>
-          </div>
-        </div>
-      </div>
-
+    
 <!--Footer-->
 <footer class="container-fluid text-center bg-black text-white py-5">
     <a href="#home" class="btn btn-light mb-3">
