@@ -129,4 +129,7 @@
     background-color: yellow !important;
     font-weight: bolder;
   }
-  
+
+  #quiz .btn--default{
+    background-color: #7FFFD4;
+  }
